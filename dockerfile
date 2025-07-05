@@ -1,5 +1,5 @@
 # Runtime stage
-FROM openjdk:11-jre-slim-sid
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY --from=builder ${WORKSPACE}/complete/target/rest-service-complete-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8888
